@@ -1,0 +1,74 @@
+{
+  "schema_version": 62,
+  "tiles": [
+    {
+      "id": "dc32e7de-8740-4a96-ac37-bab81bd64940",
+      "title": "kpmg_tile",
+      "visualType": "table",
+      "pageId": "d2704c4a-52c3-4aac-8956-6d6cad660dfc",
+      "layout": {
+        "width": 9,
+        "height": 7,
+        "x": 0,
+        "y": 0
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "c588f568-bddb-49f3-a2ca-1b06a348521f"
+      },
+      "visualOptions": {
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        }
+      }
+    }
+  ],
+  "baseQueries": [],
+  "parameters": [
+    {
+      "kind": "duration",
+      "id": "02519e34-cf5c-4cba-84b2-240b4e186dec",
+      "displayName": "Time range",
+      "description": "",
+      "beginVariableName": "_startTime",
+      "endVariableName": "_endTime",
+      "defaultValue": {
+        "kind": "dynamic",
+        "count": 1,
+        "unit": "hours"
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "dataSources": [
+    {
+      "id": "0ee136a5-c0cb-49e3-aa1a-fe156d0200b3",
+      "kind": "kusto-trident",
+      "scopeId": "kusto-trident",
+      "clusterUri": "",
+      "database": "289f601c-bf9f-9931-4edc-01032e45b89e",
+      "name": "eventhouse_kpmg",
+      "workspace": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Page 1",
+      "id": "d2704c4a-52c3-4aac-8956-6d6cad660dfc"
+    }
+  ],
+  "queries": [
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "0ee136a5-c0cb-49e3-aa1a-fe156d0200b3"
+      },
+      "text": "// Use \"take\" to view a sample number of records in the table and check the data.\nstock_kpmg_table\n| take 100\n",
+      "id": "c588f568-bddb-49f3-a2ca-1b06a348521f",
+      "usedVariables": []
+    }
+  ]
+}

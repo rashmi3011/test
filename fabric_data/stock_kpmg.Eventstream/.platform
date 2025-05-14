@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Eventstream",
+    "displayName": "stock_kpmg"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f4b2e685-eb9a-ac08-4297-da47519ffdc2"
+  }
+}

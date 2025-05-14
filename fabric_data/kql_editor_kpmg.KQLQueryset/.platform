@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLQueryset",
+    "displayName": "kql_editor_kpmg",
+    "description": "kql_editor_kpmg"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a2a9ef0d-8714-9caf-42e9-ddea57677d6c"
+  }
+}
